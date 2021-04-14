@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FragementMenu.ClientAdd"
+    android:background="@drawable/background3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarc"
+        layout="@layout/toolbarc"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20pt"
+        android:paddingRight="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!-- android:gravity="center" -->
+
+
+        <EditText
+            android:id="@+id/id_client"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/id"
+            android:hint="Customer Id"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColorLink="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/nom_client"
+
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+
+            android:background="@drawable/bg_edt"
+
+            android:drawableRight="@drawable/name"
+            android:hint="Full name"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/phone"
+            android:hint="Phone Number"
+
+
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/email"
+
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/email"
+            android:hint="Email"
+
+            android:maxLines="1"
+
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/addresse"
+            android:layout_width="279dp"
+
+            android:layout_height="42dp"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/address"
+
+
+            android:hint="Address"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
